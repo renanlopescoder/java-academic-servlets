@@ -1,0 +1,22 @@
+/* 1 - Container*/
+
+.container{
+	width: 70%;
+	margin-left: auto;
+	margin-right:auto;
+}
+
+/* 2 - Titles*/
+
+.title-page{
+	text-align:center;
+	text-shadow: 2px 2px 5px rgba(220,220,220,.7);
+}
+
+.subTitle-page{
+	text-align:center;
+}
+
+.description{
+	text-align:center;
+}

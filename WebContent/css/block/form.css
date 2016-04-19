@@ -1,0 +1,80 @@
+@CHARSET "UTF-8";
+
+/*1 - Form*/
+
+.form{
+	width: 60%;
+	background-color: rgba(230,230,230,.5);
+	margin-left: auto;
+	margin-right: auto;
+	padding: 2em;
+	border-radius: 10px;
+}
+
+.form-fieldset{
+  font-family: inherit;
+	margin-bottom: 1em;
+}
+.legenda{
+	font-weight: bolder;
+}
+
+/* 1.2 Form Field*/
+
+label{
+	display: block;
+	font-weight: bolder;
+	margin-bottom:.5em;
+}
+
+.field-form{
+	padding: .5em;
+	border-radius: 5px;
+	transition: .8s;
+	font-family: inherit;
+	font-size: .9em;
+}
+.field-form:focus{
+	background-color: rgb(255,255,200);
+}
+
+/* 1.2.1 Form Field Size*/
+
+.field-large{
+	width: 60%;
+	display:block;
+}
+.field-small{
+	width: 20%;
+}
+.textarea{
+	padding: .2em;
+	border-radius: 5px;
+}
+
+/* 1.2.2 Form Field Dynamic*/
+
+
+
+/* 1.4 Form Button*/
+
+.button{
+	text-align:center;
+	background-color: rgb(120,120,120);
+	color: white;
+	font-weight: bolder;
+	padding: .5em;
+	margin-top: .4em;
+	font-size:.9em;
+	font-family: "Open Sans Condensed", sans-serif;
+	border-radius: 5px;
+	text-decoration: none;
+	display: block;
+}
+
+.buttonCenter{
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 1em;
+	width: 15%;
+}
