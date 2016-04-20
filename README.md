@@ -20,7 +20,9 @@ otimizações, projeto desenvolvido em curso Alura "Java Servlets" praticando e 
 ## Projeto
 
 O Projeto foi desenvolvido em Java utilizando a API de Servlets,
- - Conceitos de Session e Cookies, pois com o uso da Session podemos proporcionar mais segurança e dinamismo no acesso dos usuários além de agilidade no desenvolvimento 
+ - Conceitos de Session e Cookies, pois com o uso da Session podemos proporcionar mais segurança e dinamismo no acesso dos usuários além de agilidade no desenvolvimento
+ - Páginas dinâmicas com o Java Server Pages (JSP) e uso das expression language
+ - Redirecionamento de páginas pelo Servidor aumentando a segurança de acesso  
  - Armazenamento das empresas neste projeto foi feito em um banco de dados fictício usando variáveis "static" para simplificar o código, assim podemos manter o foco no aprendizado da API de Servlet que é o básico de Java na Web
  - Com o entendimento desta API de Servlet podemos avançar em nossos estudos com as frameworks Java Web (Ex.: Struts, SpringMVC, vRaptor etc.) para melhorar nossa produtividade
 
