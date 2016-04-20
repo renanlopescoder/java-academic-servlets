@@ -32,8 +32,7 @@ public class Login extends HttpServlet {
 			writer.println("<html><body>Usuário Invalido</body></html>");
 		} else {
 			HttpSession session = req.getSession();
-			session.setAttribute("usuario.logado", usuario);
-			req.setAttribute("usuario", usuario);
+			session.setAttribute("usuarioLogado", usuario);
 			RequestDispatcher dispatcher = req.getRequestDispatcher("/WEB-INF/views/index.jsp");
 			dispatcher.forward(req, resp);
 		}

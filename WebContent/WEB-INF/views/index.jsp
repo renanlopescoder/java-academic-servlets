@@ -10,7 +10,7 @@
 </head>
 <body>
 	<div class="container">
-		<h1 class="title-page">Olá ${usuario.email}</h1>
+		<h2 class="subTitle-page">Olá ${usuarioLogado.email}</h2>
 		<form action="logout" method="POST">
 			<button class="button buttonCenter" type="submit">Deslogar</button>	
 		</form>

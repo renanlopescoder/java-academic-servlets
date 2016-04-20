@@ -18,8 +18,8 @@ public class Logout extends HttpServlet {
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp)
 			throws ServletException, IOException {
 		HttpSession session = req.getSession();
-		session.removeAttribute("usuario.logado");
+		session.removeAttribute("usuarioLogado");
 		RequestDispatcher dispatcher = req.getRequestDispatcher("login.jsp");
-		dispatcher.forward(req,resp);
+		dispatcher.forward(req, resp);
 	}
 }
