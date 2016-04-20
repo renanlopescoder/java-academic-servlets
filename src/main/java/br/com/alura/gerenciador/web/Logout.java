@@ -10,6 +10,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import br.com.alura.gerenciador.Usuario;
+
 @WebServlet(urlPatterns = "/logout")
 public class Logout extends HttpServlet {
 	@Override
@@ -17,7 +19,7 @@ public class Logout extends HttpServlet {
 			throws ServletException, IOException {
 		HttpSession session = req.getSession();
 		session.removeAttribute("usuario.logado");
-		RequestDispatcher dispatcher = req.getRequestDispatcher("/WEB-INF/views/logout.html");
+		RequestDispatcher dispatcher = req.getRequestDispatcher("login.jsp");
 		dispatcher.forward(req,resp);
 	}
 }

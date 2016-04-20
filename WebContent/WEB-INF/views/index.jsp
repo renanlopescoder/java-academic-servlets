@@ -1,22 +1,16 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="css/block/form.css">
 <link rel="stylesheet" type="text/css" href="css/style.css">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Servlet Project</title>
 </head>
 <body>
 	<div class="container">
-		<h1 class="title-page">Servlet Project - Empresas</h1>
-		<h2 class="subTitle-page">Bem vindo ao Gerenciador de Empresas</h2>
-		<p class="description">Projeto desenvolvido em Java usando conceitos de Servlets e fundamentos da web<p>
-		<form class="form" action="login" method="POST">
-			<h2 class="description">Login</h2>
-			<label>Login</label>
-			<input type="email"class="field-form field-large" name="email">
-			<br>
-			<label>Senha</label>
-			<input type="password"class="field-form field-large" name="senha">
-			<button class="button" type="submit">Enviar</button>
-		</form>
+		<h1 class="title-page">Olá ${usuario.email}</h1>
 		<form action="logout" method="POST">
 			<button class="button buttonCenter" type="submit">Deslogar</button>	
 		</form>
@@ -32,7 +26,7 @@
 			<label>Nova Empresa</label>
 			<input class="field-form field-large" name="nome">
 			<br>
-			<button class="button" type="submit">Enviar</button>	
+			<button class="button" type="submit">Enviar</button>
 		</form>
 	</div>
 </body>

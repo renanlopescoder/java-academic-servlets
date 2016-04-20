@@ -3,9 +3,9 @@ package br.com.alura.gerenciador.web;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -33,7 +33,9 @@ public class Login extends HttpServlet {
 		} else {
 			HttpSession session = req.getSession();
 			session.setAttribute("usuario.logado", usuario);
-			writer.println("<html><body>Usuário logado: " + email + "</body></html>");
+			req.setAttribute("usuario", usuario);
+			RequestDispatcher dispatcher = req.getRequestDispatcher("/WEB-INF/views/index.jsp");
+			dispatcher.forward(req, resp);
 		}
 	}
 }
