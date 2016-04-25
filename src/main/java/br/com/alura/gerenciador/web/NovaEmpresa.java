@@ -1,20 +1,19 @@
 package br.com.alura.gerenciador.web;
 
-import java.util.Collection;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
 import br.com.alura.gerenciador.Empresa;
 import br.com.alura.gerenciador.dao.EmpresaDAO;
 
-
-public class BuscaEmpresa implements JobInterface{
+public class NovaEmpresa implements JobInterface{
 
 	@Override
 	public String execute(HttpServletRequest req, HttpServletResponse resp){
-		String filtro = req.getParameter("filtro");
-		Collection<Empresa> empresas = new EmpresaDAO()
-				.buscaPorSimilaridade(filtro);
-		req.setAttribute("empresas", empresas);
-		return "/WEB-INF/views/listaEmpresas.jsp";
-	};
+		String nome = req.getParameter("nome");
+		Empresa empresa = new Empresa(nome);
+		new EmpresaDAO().adiciona(empresa);
+		req.setAttribute("empresa", empresa);
+		 return"/WEB-INF/views/novaEmpresa.jsp";
+	}
 }
