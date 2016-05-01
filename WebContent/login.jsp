@@ -14,7 +14,8 @@
 		<h1 class="title-page">Servlet Project - Empresas</h1>
 		<h2 class="subTitle-page">Bem vindo ao Gerenciador de Empresas</h2>
 		<p class="description">Projeto desenvolvido em Java usando conceitos de Servlets e fundamentos da web<p>
-		<form class="form" action="login" method="POST">
+		<form class="form" action="controller" method="POST">
+			<input type="hidden" value="Login" name="job">
 			<h2 class="description">Login</h2>
 			<c:if test="${not empty usuarioLogado}">
 				Logado como: ${usuarioLogado.email}
