@@ -2,20 +2,11 @@
 
 # Java-servlets-companies
 
-### Servlets Conceito
+### Java Servlets
 
-Servlet (servidorzinho em tradução livre) é uma classe Java usada para estender as funcionalidades de um servidor. Apesar dos servlets poderem responder a quaisquer tipos de requisições, eles normalmente são usados para estender as aplicações hospedadas por servidores web, desta forma eles podem ser imaginados como Applets Java que rodam em servidores em vez de rodarem nos navegadores web. Estes tipos de servlets são os equivalentes Java a outras tecnologias de conteúdo Web dinâmico, como PHP e ASP.NET.
+Java Servlet é uma API em Java usado por desenvolvedores web para estender as funcionalidades de um servidor, os Servlets podem responder a qualquer tipo de requisição mas normalmente é usado para estender as aplicações de um servidor web, nesta série de artigos iremos aprender seu funcionamento e alguns recursos desta API, pois, com seu entendimento podemos avançar e estudar as Frameworks Java Web e suas otimizações como (SpringMVC, vRaptor etc.).
 
-Também pode ser definido como um componente semelhante um servidor, que gera dados HTML e XML para a camada de apresentação de uma aplicação Web. Ele processa dinamicamente requisições e respostas.
-
-Fonte: https://pt.wikipedia.org/wiki/Servlet
-
-## Básico de Java Web API Servlets
-
-Os conceitos básicos da API de Servlets são necessários para o entendimento do funcionamento das Frameworks Java Web e suas 
-otimizações, projeto desenvolvido em curso Alura "Java Servlets" praticando e aplicando os conceitos.
-
-
+Para mais informações acesse: http://renanslopes8.com.br/2016/05/02/java-servlets-art1/
 
 ## Projeto
 
@@ -25,15 +16,44 @@ O Projeto foi desenvolvido em Java utilizando a API de Servlets,
  - Uso da taglib jstl nas páginas dinâmicas (JSP)
  - Redirecionamento de páginas pelo Servidor aumentando a segurança de acesso
  - Criando uma Servlet tipo "Controller" controlará todas as "tarefas" do sistema (Encapsulamento)
- - Armazenamento das empresas neste projeto foi feito em um banco de dados fictício usando variáveis "static" para simplificar o código, assim podemos manter o foco no aprendizado da API de Servlet que é o básico de Java na Web
- - Com o entendimento desta API de Servlet podemos avançar em nossos estudos com as frameworks Java Web (Ex.: Struts, SpringMVC, vRaptor etc.) para melhorar nossa produtividade
+ - Filtro de Auditoria para monitorar o acesso dos usuários
 
 ## Recursos
  - Adicionar Empresas
  - Listar Empresas
  - Busca de Empresas
  - Sistema de Login e Logout
+ - Filtro de Auditoria
 
 ### Logins Cadastrados
  - Login: renanslopes8@gmail.com Senha: lopes
  - Login: gilherme.silveira@alura.com.br Senha: silveira
+ 
+####English
+
+### Java Servlets
+
+Java Servlet is a Java API used by web developers to extend the functionality of a server, servlets can respond to any request but is usually used to extend applications from a web server, this series of articles we will learn its operation and some features of this API because, to his understanding we can move forward and study the Java Web Frameworks and their optimizations as (SpringMVC, VRaptor etc.).
+
+For more information visit: http://renanslopes8.com.br/2016/05/02/java-servlets-art1/
+
+## Project
+
+The project was developed in Java using the Servlet API,
+ - Session and Cookies Concepts, Session can provide more security and dynamism in user access as well as agility in development
+ - Dynamic pages with Java Server Pages (JSP) and use the expression language
+ - Use the taglib jstl in the dynamic pages (JSP)
+ - Redirection pages by increasing server access security
+ - Creating a Servlet type "Controller" control all the "tasks" system (Encapsulation)
+ - Audit filter to monitor user access
+
+## Resources
+ - Add Business
+ - List Companies
+ - Search Companies
+ - Login and Logout System
+ - Audit Filter
+
+### Logins
+ - User: renanslopes8@gmail.com Password: lopes
+ - User: gilherme.silveira@alura.com.br Password: silveira
